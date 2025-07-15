@@ -34,7 +34,7 @@ const Navigation: React.FC = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {['technical-skills', 'certificates', 'projects', 'contact'].map((section) => (
+            {["let's-connect", 'technical-skills', 'certificates', 'projects', 'contact'].map((section) => (
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
@@ -58,7 +58,7 @@ const Navigation: React.FC = () => {
         {isOpen && (
           <div className="md:hidden mt-4 py-4 border-t border-purple-900/20">
             <div className="flex flex-col space-y-4">
-              {['technical-skills', 'certificates', 'projects', 'contact'].map((section) => (
+              {["let's-connect", 'technical-skills', 'certificates', 'projects', 'contact'].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}

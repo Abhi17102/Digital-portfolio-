@@ -6,6 +6,7 @@ import TechnicalSkills from './components/TechnicalSkills';
 import Certificates from './components/Certificates';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Loader from './components/Loader';
 
 class ErrorBoundary extends React.Component<
   { children: React.ReactNode },
@@ -46,8 +47,14 @@ class ErrorBoundary extends React.Component<
 }
 
 function App() {
+  const [loading, setLoading] = React.useState(true);
+  React.useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <ErrorBoundary>
+      {loading && <Loader />}
       <div className="swirl-bg" />
       <div className="min-h-screen bg-black text-white font-poppins overflow-x-hidden">
         <Navigation />
