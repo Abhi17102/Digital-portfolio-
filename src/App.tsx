@@ -48,7 +48,7 @@ class ErrorBoundary extends React.Component<
 function App() {
   return (
     <ErrorBoundary>
-      <div className="wind-bg" />
+      <div className="swirl-bg" />
       <div className="min-h-screen bg-black text-white font-poppins overflow-x-hidden">
         <Navigation />
         <Hero />
