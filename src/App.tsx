@@ -1,5 +1,4 @@
 import React from 'react';
-import StarBackground from './components/StarBackground';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import SocialLinks from './components/SocialLinks';
@@ -49,8 +48,8 @@ class ErrorBoundary extends React.Component<
 function App() {
   return (
     <ErrorBoundary>
+      <div className="wind-bg" />
       <div className="min-h-screen bg-black text-white font-poppins overflow-x-hidden">
-        <StarBackground />
         <Navigation />
         <Hero />
         <SocialLinks />
