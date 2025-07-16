@@ -88,8 +88,12 @@ const Certificates: React.FC = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className="h-64 bg-gradient-to-br from-purple-600 to-blue-600 rounded-lg flex items-center justify-center">
-                    <Award className="w-24 h-24 text-white" />
+                  <div className="w-full flex items-center justify-center">
+                    <img 
+                      src={selectedCertificate.image} 
+                      alt={selectedCertificate.title} 
+                      className="max-h-64 max-w-full rounded-lg shadow-lg border border-purple-700/30 object-contain bg-white" 
+                    />
                   </div>
                   
                   <div className="space-y-2">
