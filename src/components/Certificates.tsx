@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Award, X, ExternalLink } from 'lucide-react';
+import certificateImg from '../assets/Certificate.png';
 
 const Certificates: React.FC = () => {
   const [selectedCertificate, setSelectedCertificate] = useState<any>(null);
@@ -8,7 +9,7 @@ const Certificates: React.FC = () => {
     {
       title: 'My Basic Statistics for Data Science',
       issuer: 'Skill Academy',
-      image: '/api/placeholder/400/300',
+      image: certificateImg,
       description: 'Comprehensive course covering fundamental statistical concepts essential for data science, including probability, descriptive statistics, hypothesis testing, and statistical inference.',
       skills: ['Statistics', 'Data Science', 'Probability', 'Hypothesis Testing'],
       completedDate: '2024'
