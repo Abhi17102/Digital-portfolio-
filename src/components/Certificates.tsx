@@ -45,8 +45,12 @@ const Certificates: React.FC = () => {
               onClick={() => openModal(cert)}
             >
               <div className="bg-gray-900/50 border border-gray-800 rounded-lg overflow-hidden hover:border-[#2c1281] transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 hover:scale-105">
-                <div className="h-48 bg-gradient-to-br from-purple-600 to-blue-600 flex items-center justify-center">
-                  <Award className="w-16 h-16 text-white" />
+                <div className="h-48 bg-gray-800 flex items-center justify-center overflow-hidden">
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="object-contain h-full w-full"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#2c1281] transition-colors duration-300">

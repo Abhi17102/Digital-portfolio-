@@ -5,6 +5,7 @@ import SocialLinks from './components/SocialLinks';
 import TechnicalSkills from './components/TechnicalSkills';
 import Certificates from './components/Certificates';
 import Projects from './components/Projects';
+import ProgrammingProjects from './components/ProgrammingProjects';
 import Contact from './components/Contact';
 import Loader from './components/Loader';
 
@@ -62,6 +63,7 @@ function App() {
         <SocialLinks />
         <TechnicalSkills />
         <Certificates />
+        <ProgrammingProjects />
         <Projects />
         <Contact />
       </div>
